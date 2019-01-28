@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>CIPHER</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+
+    <div>
+    <p>Digite o deslocamento desejado para cifrar</p>
+    <input type="number" id="deslocId" />
+    </div>
+
+    <div>
+    <p>Digite a mensagem a ser cifrada</p>
+    <input id="messageId" />
+    <input onclick="send();" type ="submit" id="submit2" value="Enviar"/>
+    </div>
+
+    <div id="msgCifrada">Mensagem cifrada</div>
+
+    <script src="cipher.js"></script>
+  </body>
+</html>
