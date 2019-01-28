@@ -10,16 +10,31 @@
 
     <div>
     <p>Digite o deslocamento desejado para cifrar</p>
-    <input type="number" id="deslocId" />
+    <input type="number" id="deslocId1" />
     </div>
 
     <div>
     <p>Digite a mensagem a ser cifrada</p>
     <input id="messageId" />
-    <input onclick="send();" type ="submit" id="submit2" value="Enviar"/>
+    <input onclick="send1();" type ="submit" id="submit1" value="Enviar"/>
     </div>
 
     <div id="msgCifrada">Mensagem cifrada</div>
+
+
+    <div>
+      <p>Digite o deslocamento desejado para cifrar</p>
+      <input type="number" id="deslocId2" />
+    </div>
+
+    <div>
+    <p>Digite a mensagem a ser decifrada</p>  
+    <input id="messageIdDecifra"/>
+    <input  onclick="send2();" type="submit" id="submit2" value="Enviar"/>
+    </div>
+
+    <div id="msgDecifrada">Mensagem decifrada</div>  
+    
 
     <script src="cipher.js"></script>
   </body>
