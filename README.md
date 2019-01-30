@@ -132,4 +132,4 @@ para ver a descrição detalhada de cada _habilidade_ e cada _nível_.
 * [ ] Cifra/descifra _outros_ caracteres (espaços, pontuação, `ã`, `á`, ...)
 
 #### Fluxograma
-[Fluxograma]!(https://github.com/TatianeTabata/cipher/blob/master/Untitled%20Diagram.png)
+![Fluxograma](https://github.com/TatianeTabata/cipher/blob/master/Untitled%20Diagram.png)
