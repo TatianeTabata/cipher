@@ -30,3 +30,11 @@ margin-left: 15%;
 margin-right: 15%;
 }
 
+.hide {
+display: none;
+}
+
+.submit1{
+width: 150px;
+background-color: blue;
+}

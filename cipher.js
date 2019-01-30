@@ -1,5 +1,7 @@
 
-function encode(mensagem, desloc){
+let cipher = {};
+
+cipher.encode = (mensagem, desloc) => {
   let fullWord = "";
   let stringWord = "";
   let result = "";
@@ -23,11 +25,11 @@ return result;
 }
 
 
-function send1(){
+let send1 = () => {
   let deslocamento = document.getElementById("deslocId1").value;
   deslocamento = parseInt(deslocamento);
   let message = document.getElementById("messageId").value;
-  let result = encode(message, deslocamento);
+  let result = cipher.encode(message, deslocamento);
   document.getElementById("msgCifrada").innerHTML = "Mensagem cifrada é: " + result;
 }
 
