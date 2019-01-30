@@ -1,6 +1,32 @@
-body {
-background-color : purple;
-text-align: left;
-font-family: Georgia, 'Times New Roman', Times, serif;
-font-size: medium;
+
+body{    
+text-align: center;
+font-family: 'Courier New', Courier, monospace;
+font-size: small;
+background-image: url('Pergaminho2.jpg');    
+background-repeat: no-repeat;
+background-size: 100%;  
+background-position: 100%; 
+color: rgb(134, 26, 26);
+background-color: blanchedalmond;
 }
+
+#container{
+margin-top: 4%;
+}
+
+#title{
+text-align: center;
+font-family: fantasy;
+font-style: inherit;
+color: rgb(131, 58, 24);
+font-size: large;
+}
+
+#intro{
+font-family: fantasy;
+font-size: medium;
+margin-left: 15%;
+margin-right: 15%;
+}
+

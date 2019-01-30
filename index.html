@@ -6,36 +6,54 @@
     <title>CIPHER</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
-  <body>
 
+    <body>
+      <div id="container">
+
+    <div id="title">
+      <h1>Bem vindo ao CIPHER!</h1>
+    </div>
+
+    <div id="intro">
+    <h3>Em criptografia, a Cifra de César, também conhecida como cifra de troca, código de César ou troca de César, é uma das mais simples e conhecidas técnicas de criptografia. É um tipo de cifra de substituição na qual cada letra do texto é substituída por outra, que se apresenta no alfabeto abaixo dela um número fixo de vezes. Por exemplo, com uma troca de três posições, A seria substituído por D, B se tornaria E, e assim por diante. O nome do método é em homenagem a Júlio César, que o usou para se comunicar com os seus generais.</h3>
+    <h3>Vamos lá, escolha a mensagem que deseja cifrar/decifrar e seu número de deslocamento.</h3>
+    </div>
+    
     <div>
-    <p>Digite o deslocamento desejado para cifrar</p>
+    <p>Deslocamento</p>
     <input type="number" id="deslocId1" />
     </div>
 
     <div>
-    <p>Digite a mensagem a ser cifrada</p>
+    <p>Mensagem a ser cifrada</p>
     <input id="messageId" />
-    <input onclick="send1();" type ="submit" id="submit1" value="Enviar"/>
     </div>
 
-    <div id="msgCifrada">Mensagem cifrada</div>
+    <div id="enviar">
+    <input onclick="send1();" type ="submit" id="submit1" value="Enviar" />
+    </div>
 
+    <div id="msgCifrada">Mensagem cifrada é: </div>
 
     <div>
-      <p>Digite o deslocamento desejado para cifrar</p>
+      <p>Deslocamento</p>
       <input type="number" id="deslocId2" />
     </div>
 
     <div>
-    <p>Digite a mensagem a ser decifrada</p>  
-    <input id="messageIdDecifra"/>
-    <input  onclick="send2();" type="submit" id="submit2" value="Enviar"/>
+    <p>Mensagem a ser decifrada</p>  
+    <input id="messageIdDecifra" />
     </div>
 
-    <div id="msgDecifrada">Mensagem decifrada</div>  
-    
+    <div id="enviar2">
+    <input  onclick="send2();" type="submit" id="submit2" value="Enviar" />
+    </div>
+
+    <div id="msgDecifrada">Mensagem decifrada é: </div> 
 
     <script src="cipher.js"></script>
+    <script src="tests.js"></script>
+    
+    </div>
   </body>
 </html>
