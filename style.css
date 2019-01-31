@@ -7,8 +7,8 @@ background-image: url('Pergaminho2.jpg');
 background-repeat: no-repeat;
 background-size: 100%;  
 background-position: 100%; 
-color: rgb(134, 26, 26);
-background-color: blanchedalmond;
+color: rgb(180, 45, 45);
+background-color: rgb(252, 215, 168);
 }
 
 #container{
@@ -17,15 +17,15 @@ margin-top: 4%;
 
 #title{
 text-align: center;
-font-family: fantasy;
+font-family: unset;
 font-style: inherit;
-color: rgb(131, 58, 24);
+color: rgb(160, 49, 15);
 font-size: large;
 }
 
 #intro{
-font-family: fantasy;
-font-size: medium;
+font-family: unset;
+font-size: small;
 margin-left: 15%;
 margin-right: 15%;
 }
@@ -34,7 +34,46 @@ margin-right: 15%;
 display: none;
 }
 
-.submit1{
-width: 150px;
-background-color: blue;
+#deslocId1, #deslocId2{
+border-radius: 10px;
+width: 60px;
 }
+
+#submit1, #submit2{
+width: 150px;
+background-color: rgb(163, 50, 50);
+font-family: cursive;
+color: aliceblue;
+border-radius: 15px;
+}
+
+#msgCifrada, #msgDecifrada{
+font-weight: bolder;
+font-style: oblique;
+font-size: 20px; 
+color: rgb(155, 24, 20);
+text-shadow: 3px 3px 3px 3px rgb(253, 251, 251);
+}
+
+#messageId, #messageIdDecifra{
+margin-bottom: 15px;
+}
+
+.boxCifra1, .boxCifra2{
+    width: 350px;
+    padding: 5px;
+    border: 2px solid rgb(15, 15, 14);
+    margin: 0 auto; 
+    border-radius: 15px;    
+    vertical-align: middle;
+    background: url("Chave.png");
+    }
+
+#cifrarTitle{
+    font-family: fantasy;
+    color: rgb(252, 123, 72);
+    font-weight: bolder;
+    text-shadow: 3px 3px 3px 3px rgb(155, 24, 20);
+    font-size: medium;
+}
+

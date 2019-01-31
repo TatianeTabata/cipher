@@ -112,7 +112,7 @@ para ver a descrição detalhada de cada _habilidade_ e cada _nível_.
 
 ### Parte Obrigatória
 
-* [ ] `README.md` com explicações e desenho do projeto
+* [ok] `README.md` com explicações e desenho do projeto
 * [ok] Usar VanillaJS.
 * [ok] Permitir escrever um texto, com letras maiúsculas e minúsculas, para ser
   cifrado.

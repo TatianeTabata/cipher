@@ -30,11 +30,11 @@ let send1 = () => {
   deslocamento = parseInt(deslocamento);
   let message = document.getElementById("messageId").value;
   let result = cipher.encode(message, deslocamento);
-  document.getElementById("msgCifrada").innerHTML = "Mensagem cifrada é: " + result;
+  document.getElementById("msgCifrada").innerHTML = "Mensagem cifrada é:  " + "<br />" + result;
 }
 
 
-function decode(mensagem, desloc){
+cipher.decode = (mensagem, desloc) => {
   let fullWord = "";
   let teste = "";
   let stringWord = "";
@@ -65,6 +65,6 @@ function send2(){
   let deslocamento = document.getElementById("deslocId2").value;
   deslocamento = parseInt(deslocamento);
   let message = document.getElementById("messageIdDecifra").value;
-  let result = decode(message, deslocamento);
-  document.getElementById("msgDecifrada").innerHTML = "Mensagem cifrada é: " + result;
+  let result = cipher.decode(message, deslocamento);
+  document.getElementById("msgDecifrada").innerHTML = "Mensagem cifrada é: " + "<br />" + result;
 }

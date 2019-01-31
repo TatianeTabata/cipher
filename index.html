@@ -19,22 +19,27 @@
     <h3>Vamos lá, escolha a mensagem que deseja cifrar/decifrar e seu número de deslocamento.</h3>
     </div>
     
+    <div class="boxCifra1"> 
+      <div id="cifrarTitle"><h1>CIFRAR</h1></div>
     <div>
     <p>Deslocamento</p>
     <input type="number" id="deslocId1" />
     </div>
-
+    
     <div>
     <p>Mensagem a ser cifrada</p>
     <input id="messageId" />
     </div>
 
     <div id="enviar">
-    <input onclick="send1();" type ="submit" class="submit1" value="Enviar" />
+    <input onclick="send1();" type ="submit" id="submit1" value="Cifrar" />
     </div>
-
-    <div id="msgCifrada">Mensagem cifrada é: </div>
-
+  </P>
+    <div id="msgCifrada"><br />Mensagem cifrada é: </div>
+    </div>
+  </p>
+    <div class="boxCifra2">
+        <div id="cifrarTitle"><h1>DECIFRAR</h1></div>
     <div>
       <p>Deslocamento</p>
       <input type="number" id="deslocId2" />
@@ -46,10 +51,11 @@
     </div>
 
     <div id="enviar2">
-    <input  onclick="send2();" type="submit" id="submit2" value="Enviar" />
+    <input  onclick="send2();" type="submit" id="submit2" value="Decifrar" />
     </div>
-
-    <div id="msgDecifrada">Mensagem decifrada é: </div> 
+  </P>
+    <div id="msgDecifrada"><br />Mensagem decifrada é: <br /></div> 
+      </div>
 
     <script src="cipher.js"></script>
     <script src="tests.js"></script>
