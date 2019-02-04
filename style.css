@@ -3,12 +3,12 @@ body{
 text-align: center;
 font-family: 'Courier New', Courier, monospace;
 font-size: small;
-background-image: url('Pergaminho2.jpg');    
+background-image: url('folha.jpg');    
 background-repeat: no-repeat;
 background-size: 100%;  
 background-position: 100%; 
 color: rgb(180, 45, 45);
-background-color: rgb(252, 215, 168);
+background-color: rgb(168, 157, 91);
 }
 
 #container{
@@ -17,17 +17,19 @@ margin-top: 4%;
 
 #title{
 text-align: center;
-font-family: unset;
-font-style: inherit;
-color: rgb(160, 49, 15);
+font-family: 'Dancing Script', cursive;
+color: rgb(153, 36, 7);
 font-size: large;
+font-weight: bolder;
 }
 
 #intro{
-font-family: unset;
+font-family: 'Cinzel', serif;
 font-size: small;
 margin-left: 15%;
 margin-right: 15%;
+font-weight: bolder;
+color: rgb(243, 86, 59);
 }
 
 .hide {
@@ -52,28 +54,40 @@ font-weight: bolder;
 font-style: oblique;
 font-size: 20px; 
 color: rgb(155, 24, 20);
-text-shadow: 3px 3px 3px 3px rgb(253, 251, 251);
+text-shadow: 3px 3px 3px rgb(168, 166, 166);
 }
 
 #messageId, #messageIdDecifra{
 margin-bottom: 15px;
+width: 300px;
+border-radius: 15px;
 }
 
-.boxCifra1, .boxCifra2{
-    width: 350px;
+.boxCifra1{
+    width: 386px;
+    padding: 5px;    
+    border-radius: 15px;        
+    background: url("chave.png");
+    }
+
+    .boxCifra2{
+    width: 386px;
     padding: 5px;
-    border: 2px solid rgb(15, 15, 14);
-    margin: 0 auto; 
-    border-radius: 15px;    
-    vertical-align: middle;
-    background: url("Chave.png");
+    border-radius: 15px;        
+    background: url("chave.png");
+    display: inline-block;
+    margin-left: 25px;
     }
 
 #cifrarTitle{
     font-family: fantasy;
-    color: rgb(252, 123, 72);
+    color: rgb(224, 70, 9);
     font-weight: bolder;
-    text-shadow: 3px 3px 3px 3px rgb(155, 24, 20);
     font-size: medium;
 }
 
+.cont{
+    display: inline-flex;
+    text-align: center;
+    margin-top: 35px;
+}

@@ -1,26 +1,26 @@
-var result = encode("AB", 2);
-if(encode("AB", 2) == "CD"){
+var result = cipher.encode("AB", 2);
+if(cipher.encode("AB", 2) == "CD"){
 console.log("Correto " + result);
 } else {
     console.log("Errado")
 }
 
-var result = encode("Zz", 2);
-if(encode("Zz", 2) == "Bb"){
+var result = cipher.encode("Zz", 2);
+if(cipher.encode("Zz", 2) == "Bb"){
 console.log("Correto " + result);
 } else {
     console.log("Errado")
 }
 
-var result = decode("AB", 2);
-if(decode("AB", 2) == "YZ"){
+var result = cipher.decode("AB", 2);
+if(cipher.decode("AB", 2) == "YZ"){
 console.log("Correto " + result);
 } else {
     console.log("Errado")
 }
 
-var result = decode("Zz", 2);
-if(decode("Zz", 2) == "Xx"){
+var result = cipher.decode("Zz", 2);
+if(cipher.decode("Zz", 2) == "Xx"){
 console.log("Correto " + result);
 } else {
     console.log("Errado")

@@ -1,28 +1,40 @@
 
 let cipher = {};
 
-cipher.encode = (mensagem, desloc) => {
-  let fullWord = "";
+cipher.encode = (mensagem, offset) => {
   let stringWord = "";
   let result = "";
-
-  for(let i = 0; i < mensagem.length; i++){
+ 
+  for(let i in mensagem) {
   let messageAsc = mensagem.charCodeAt(i);
         
-      if(parseInt(messageAsc)==32){
-      fullWord = 32; 
+      if(offset <0) {  
+        if(messageAsc > 64 && messageAsc < 91) {
+          messageAsc = 90 + ((((parseInt(messageAsc) - 90) + offset) % 26))
+        }
+        if(messageAsc > 96 && messageAsc < 123){
+          messageAsc = 122 + ((((parseInt(messageAsc) - 122) + offset) % 26))
+      }  
+    }else 
+      
+      if(offset > 0) {
+        if(parseInt(messageAsc)==32){
+          messageAsc = 32; 
       }
-      if(messageAsc > 64 && messageAsc < 91){
-        fullWord = (((parseInt(messageAsc) - 65 + desloc) % 26) + 65)
+        if(messageAsc > 64 && messageAsc < 91){
+          messageAsc = (((parseInt(messageAsc) - 65 + offset) % 26) + 65)
       }
-      if(messageAsc > 96 && messageAsc < 123){
-        fullWord = (((parseInt(messageAsc) - 97 + desloc) % 26) + 97)
+        if(messageAsc > 96 && messageAsc < 123){
+          messageAsc = (((parseInt(messageAsc) - 97 + offset) % 26) + 97)
       }    
-    stringWord = String.fromCharCode(fullWord);       
+    }
+  
+    stringWord = String.fromCharCode(messageAsc);    
     result += stringWord;
   }
 return result;
 }
+
 
 
 let send1 = () => {
@@ -34,27 +46,27 @@ let send1 = () => {
 }
 
 
-cipher.decode = (mensagem, desloc) => {
-  let fullWord = "";
-  let teste = "";
+cipher.decode = (mensagem, offset) => {
   let stringWord = "";
   let result = "";
 
-  for(let i = 0; i < mensagem.length; i++){
+  if(offset < 0){
+    offset = offset*-1;
+  }
+
+  for(let i in mensagem) { 
     let messageAsc = mensagem.charCodeAt(i);
     
       if(parseInt(messageAsc)==32){
-      teste = 32; 
+        messageAsc = 32; 
       }
       if(messageAsc > 64 && messageAsc < 91){
-        fullWord = ((parseInt(messageAsc) - 90 - desloc) % 26) 
-        teste = 90 + fullWord; 
+        messageAsc = 90 + (((parseInt(messageAsc) - 90 - offset) % 26))  
       }
       if(messageAsc > 96 && messageAsc < 123){
-        fullWord = ((parseInt(messageAsc) - 122 - desloc) % 26) //+ 97)
-        teste = 122 + fullWord;
+        messageAsc = 122 + (((parseInt(messageAsc) - 122 - offset) % 26))
       } 
-    stringWord = String.fromCharCode(teste);       
+    stringWord = String.fromCharCode(messageAsc);       
     result += stringWord;
   }
 return result;
