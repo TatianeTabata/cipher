@@ -8,11 +8,11 @@ cipher.encode = (mensagem, offset) => {
   for(let i in mensagem) {
   let messageAsc = mensagem.charCodeAt(i);
         
-      if(offset <0) {  
-        if(messageAsc > 64 && messageAsc < 91) {
+      if(offset <0) {  //verifica deslocamento negativo
+        if(messageAsc > 64 && messageAsc < 91) { //verifica letras maiusculas
           messageAsc = 90 + ((((parseInt(messageAsc) - 90) + offset) % 26))
         }
-        if(messageAsc > 96 && messageAsc < 123){
+        if(messageAsc > 96 && messageAsc < 123){ //verifica letras minusculas
           messageAsc = 122 + ((((parseInt(messageAsc) - 122) + offset) % 26))
       }  
     }else 
@@ -30,7 +30,7 @@ cipher.encode = (mensagem, offset) => {
     }
   
     stringWord = String.fromCharCode(messageAsc);    
-    result += stringWord;
+    result += stringWord;  //iteracao de cada letra
   }
 return result;
 }
@@ -50,13 +50,18 @@ cipher.decode = (mensagem, offset) => {
   let stringWord = "";
   let result = "";
 
-  if(offset < 0){
-    offset = offset*-1;
-  }
-
   for(let i in mensagem) { 
     let messageAsc = mensagem.charCodeAt(i);
     
+    if(offset <0) {  
+      if(messageAsc > 64 && messageAsc < 91) {
+        messageAsc = (((parseInt(messageAsc) - 65 - offset) % 26) + 65)
+      }
+      if(messageAsc > 96 && messageAsc < 123){
+        messageAsc = (((parseInt(messageAsc) - 97 - offset) % 26) + 97)
+    }  
+  }else
+    if(offset > 0) {
       if(parseInt(messageAsc)==32){
         messageAsc = 32; 
       }
@@ -66,6 +71,7 @@ cipher.decode = (mensagem, offset) => {
       if(messageAsc > 96 && messageAsc < 123){
         messageAsc = 122 + (((parseInt(messageAsc) - 122 - offset) % 26))
       } 
+    }
     stringWord = String.fromCharCode(messageAsc);       
     result += stringWord;
   }
