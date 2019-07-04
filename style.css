@@ -67,14 +67,14 @@ border-radius: 15px;
     width: 386px;
     padding: 5px;    
     border-radius: 15px;        
-    background: url("chave.png");
+    background: url("Chave.png");
     }
 
     .boxCifra2{
     width: 386px;
     padding: 5px;
     border-radius: 15px;        
-    background: url("chave.png");
+    background: url("Chave.png");
     display: inline-block;
     margin-left: 25px;
     }
