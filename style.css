@@ -3,7 +3,7 @@ body{
 text-align: center;
 font-family: 'Courier New', Courier, monospace;
 font-size: small;
-background-image: url('folha.jpg');    
+background-image: url('./img/folha.jpg');    
 background-repeat: no-repeat;
 background-size: 100%;  
 background-position: 100%; 
@@ -32,13 +32,10 @@ font-weight: bolder;
 color: rgb(243, 86, 59);
 }
 
-.hide {
-display: none;
-}
-
 #deslocId1, #deslocId2{
 border-radius: 10px;
 width: 60px;
+text-align: center;
 }
 
 #submit1, #submit2{
@@ -49,7 +46,7 @@ color: aliceblue;
 border-radius: 15px;
 }
 
-#msgCifrada, #msgDecifrada{
+#msgCifrada, #msgDecifrada, .msgEncoded, .msgDecoded{
 font-weight: bolder;
 font-style: oblique;
 font-size: 20px; 
@@ -57,37 +54,35 @@ color: rgb(155, 24, 20);
 text-shadow: 3px 3px 3px rgb(168, 166, 166);
 }
 
-#messageId, #messageIdDecifra{
-margin-bottom: 15px;
+#messageId, #messageIdDecifra, #msgEncoded, #msgDecoded{
+margin-bottom: 9px;
 width: 300px;
 border-radius: 15px;
+height: 1.5vw;
+text-align: center;
 }
 
 .boxCifra1{
-    width: 386px;
-    padding: 5px;    
-    border-radius: 15px;        
-    background: url("chave.png");
-    }
+width: 386px;
+padding: 5px;    
+border-radius: 15px;        
+background: url("./img/chave.png");
+}
 
-    .boxCifra2{
-    width: 386px;
-    padding: 5px;
-    border-radius: 15px;        
-    background: url("chave.png");
-    display: inline-block;
-    margin-left: 25px;
-    }
+.boxCifra2{    
+display: inline-block;
+margin-left: 25px;
+}
 
 #cifrarTitle{
-    font-family: fantasy;
-    color: rgb(224, 70, 9);
-    font-weight: bolder;
-    font-size: medium;
+font-family: fantasy;
+color: rgb(224, 70, 9);
+font-weight: bolder;
+font-size: medium;
 }
 
 .cont{
-    display: inline-flex;
-    text-align: center;
-    margin-top: 35px;
+display: inline-flex;
+text-align: center;
+margin-top: 35px;
 }
