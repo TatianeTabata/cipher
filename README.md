@@ -2,14 +2,11 @@
 
 ## Prefácio
 
-O aniversário da sua mãe está se aproximando e você está organizando uma festa
-surpresa. Para manter a festa em segredo foi criado um grupo de Whatsapp com
-amigxs e familiares. O problema é que as vezes sua mãe utiliza o seu celular
-e pode ser que ela veja as suas mensagens. Como a festa é surpresa, você
-decide criar uma aplicação que permita enviar mensagens criptografadas e depois
-descriptografar. Então agora é a hora de aplicar os seus super poderes 😎
+A Cifra de Cesar foi desenvolvida para que fosse possível criptografar e descriptografar mensagens com uma lógica simples.
+O aplicativo ofi criado com base nessa cifra e você pode testar o app [aqui](https://tatianetabata.github.io/cipher/)
 
-Teste o app [aqui](https://tatianetabata.github.io/cipher/)
+Essa é a carinha do app :)  
+![layout](img/cipher.PNG)
 
 ## Introdução
 
